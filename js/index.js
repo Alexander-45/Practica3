@@ -9,11 +9,16 @@ $(document).ready(function (){
 	var reporte = $("#Reporte");
 	reporte.on("click", function(){
 			$(".contenedor").html(function(){
-					var html = "<h2 class='titulo'>Ventas realizadas</h2>";
-					html += "<a href='index.html' id='Regresar'>Regresar</a>";
-					for (var j = 0; j < localStorage.length; j++) {
-						var ticket = JSON.parse(localStorage.getItem("factura"+j));
-						html+= "<div class='minidivs'><h3>Nombre de la pelicula: "+ticket.Nombre+"</h3><h3>Horario: "+ticket.Horario+"</h3><h3>Cantidad de tickets: "+ticket.Cantidad+"</h3></div>";
+					if(localStorage.length == 0){
+						html = "<div class='minidivs'><h3>No hay ventas realizadas</h3></div>";
+					}
+					else{
+						var html = "<h2 class='titulo'>Ventas realizadas</h2>";
+						html += "<a href='index.html' id='Regresar'>Regresar</a>";
+						for (var j = 0; j < localStorage.length; j++) {
+							var ticket = JSON.parse(localStorage.getItem("factura"+j));
+							html+= "<div class='minidivs'><h3>Nombre de la pelicula: "+ticket.Nombre+"</h3><h3>Horario: "+ticket.Horario+"</h3><h3>Cantidad de tickets: "+ticket.Cantidad+"</h3></div>";
+						}
 					}
 					return html;
 				});
