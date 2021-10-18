@@ -10,7 +10,7 @@ $(document).ready(function (){
 	reporte.on("click", function(){
 			$(".contenedor").html(function(){
 					if(localStorage.length == 0){
-						html = "<div class='minidivs'><h3>No hay ventas realizadas</h3><a href='index.html' id='Regresar'>Regresar</a></div>";
+						html = "<div class='minidivs'><h3>No hay ventas realizadas</h3><a href='index.html' id='RegresarFac'>Regresar</a></div>";
 					}
 					else{
 						var html = "<h2 class='titulo'>Ventas realizadas</h2>";
