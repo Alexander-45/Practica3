@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cine Bosco</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="https://kit.fontawesome.com/550843a4c7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/taller3.css">
+	<title>Cine Don Bosco</title>
+</head>
+<body>
+	<div class="contenedor">
+
+	
+	<h1>Cine Bosco</h1>
+	<button id="Reporte">Generar reporte</button>
+	<form action="javascript:void(0);" id="FormDonBosco">
+		<div class="row">
+			<div class="imagen">
+				<img src="img/donbosco.jpg">
+			</div>
+
+			<div class="derecha">
+				<h2 class="Nombre">Don Bosco</h2>
+				<div class="apartado-nombres">
+				<p>Clasificación: <span class="Clasificacion">E</span></p>
+				<p>Duración de pelicula: <span class="Duracion">200 min.</span></p>
+				<p>Precio: $4.5</p>
+			</div>
+
+			<div class="tabla">
+				<div class="apartado-formato">
+					<p>Formato Pelicula: <span class="Formato">2D, 3D, DOB</span></p>
+					<p>| Butacas: <span class="Butacas">tradicionales</span></p>
+				</div>
+			
+			
+
+			<div class="horarios">
+				<p>Horarios:</p><br>
+				<input type="radio" name="DonBosco" id="9" value="9:00 am" required class="radiosDonBosco" checked>
+				<label for="9">9:00 am</label>
+				<input type="radio" name="DonBosco" id="12" value="12:00 pm" required class="radiosDonBosco">
+				<label for="12">12:00 pm</label>
+				<input type="radio" name="DonBosco" id="3" value="3:00 pm" required class="radiosDonBosco">
+				<label for="3">3:00 pm</label>
+				<input type="radio" name="DonBosco" id="6" value="6:00 pm" required class="radiosDonBosco">
+				<label for="6">6:00 pm</label>
+			</div>
+		</div>
+		<input type="submit" name="Comprar" id="ComprarDonBosco" class="submit" value="Comprar ticket">
+			</div>
+		</div>
+	</form>
+	
+	<form action="javascript:void(0);" id="FormFatima">
+		<div class="row">
+			<div class="imagen">
+				<img src="img/fatima.jpg">
+			</div>
+			<div class="derecha">
+			<h2 class="Nombre">Fátima</h2>
+			<div class="apartado-nombres">
+				<p>Clasificación: <span class="Clasificacion">T</span></p>
+				<p>Duración de pelicula: <span class="Duracion">113 min.</span></p>
+				<p>Precio: $5</p>
+		</div>
+			<div class="tabla">
+				<div class="apartado-formato">
+					<p>Formato Pelicula: <span class="Formato">2D, 3D, DOB</span></p>
+					<p>| Butacas: <span class="Butacas">tradicionales</span></p>
+				</div>
+			
+				<div class="horarios">
+					<p>Horarios:</p>
+					<input type="radio" name="fatima" id="10" value="10:00 am" required class="radiosFatima" checked>
+					<label for="10">10:00 am</label>
+					<input type="radio" name="fatima" id="12" value="1:00 pm" required class="radiosFatima">
+					<label for="12">1:00 pm</label>
+					<input type="radio" name="fatima" id="3" value="5:00 pm" required class="radiosFatima">
+					<label for="3">5:00 pm</label>
+					<input type="radio" name="fatima" id="6" value="7:00 pm" required class="radiosFatima">
+					<label for="6">7:00 pm</label>
+			</div>
+		</div>
+		<input type="submit" name="Comprar" id="ComprarFatima" class="submit" value="Comprar ticket">
+	</div>
+	</div>
+	</form>
+	<form action="javascript:void(0);" id="FormPasion">
+		<div class="row">
+			<div class="imagen">
+				<img src="img/pasiondecristo.jpg">
+			</div>
+			
+			<div class="derecha">
+
+			
+			<h2 class="Nombre">La pasión de Cristo</h2>
+			<div class="apartado-nombres">
+			<p>Clasificación: <span class="Clasificacion">M</span></p>
+			<p>Duración de pelicula: <span class="Duracion">126 min.</span></p>
+			<p>Precio: $4.75</p>
+		</div>
+
+		<div class="tabla">
+
+		
+			<div class="apartado-formato">
+				<p>Formato Pelicula: <span class="Formato">2D, 3D, DOB</span></p>
+				<p>| Butacas: <span class="Butacas">tradicionales</span></p>
+			</div>
+			<div class="horarios">
+				<p>Horarios:</p>
+				<input type="radio" name="pasion" id="9" value="11:00 am" required class="radiosPasion" checked>
+				<label for="9">11:00 am</label>
+				<input type="radio" name="pasion" id="12" value="2:00 pm" required class="radiosPasion">
+				<label for="12">2:00 pm</label>
+				<input type="radio" name="pasion" id="3" value="4:00 pm" required class="radiosPasion">
+				<label for="3">4:00 pm</label>
+				<input type="radio" name="pasion" id="6" value="7:00 pm" required class="radiosPasion">
+				<label for="6">7:00 pm</label>
+			</div>
+		</div>
+		<input type="submit" name="Comprar" id="ComprarPasion" class="submit" value="Comprar ticket">
+	</div>
+	</div>
+	</form>
+</div>
+
+</body>
+</html>
